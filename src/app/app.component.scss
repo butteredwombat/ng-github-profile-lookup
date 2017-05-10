@@ -1,0 +1,69 @@
+/***********************************
+          Helper Classes
+************************************/
+
+$sizes: (no: 0px, xxs: 2px, xs: 5px, sm: 10px, md: 20px, lg: 30px, xl: 40px);
+$sides: (top, bottom, left, right);
+$spacing: (padding, margin);
+
+/*** padding and margin classes ***/
+@each $type in $spacing {
+  @each $key, $val in $sizes {
+    $space: $type;
+    .#{$key}-#{$type} {
+      #{$space}: $val !important;
+    }
+    %#{$key}-#{$type} {
+      #{$space}: $val !important;
+    }
+    @each $side in $sides {
+      $class: #{$key}-#{$type}-#{$side};
+      .#{$class} {
+        #{$type}-#{$side}: $val !important;
+      }
+      %#{$class} {
+        #{$type}-#{$side}: $val !important;
+      }
+    }
+  }
+}
+
+/*** font weight classes ***/
+
+@for $i from 1 through 9 {
+  $val: $i * 100;
+  .fwt-#{$i} {
+    font-weight: $val !important;
+  }
+}
+
+.absolute {
+  position: absolute !important;
+}
+
+.fill-width {
+  width: 100% !important;
+}
+
+.fill-height {
+  height: 100% !important;
+}
+
+.block {
+  display: block !important;
+}
+
+.no-text-transform {
+  text-transform: none !important;
+}
+
+.no-float {
+  float: none !important;
+}
+
+/***********************************
+            Main Styling
+************************************/
+body {
+  background-color: #EEEEEE;
+}

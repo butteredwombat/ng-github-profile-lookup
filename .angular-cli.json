@@ -1,7 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "ng-github-profile-lookup"
+    "name": "ng-github-profile-lookup",
+    "ejected": true
   },
   "apps": [
     {
@@ -52,6 +53,7 @@
   },
   "defaults": {
     "styleExt": "css",
-    "component": {}
+    "component": {
+    }
   }
 }
