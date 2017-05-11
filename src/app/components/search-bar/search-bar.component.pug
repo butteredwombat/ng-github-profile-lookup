@@ -1,0 +1,7 @@
+nav.black
+    form([formGroup]='searchProfileForm' (ngSubmit)='onSubmit()' novalidate)
+        .input-field
+            input(formControlName='profileName' id="search" type="search" placeholder='Search for GitHub Profile')
+            label.label-icon(for="search")
+                i.material-icons search
+            i.material-icons close

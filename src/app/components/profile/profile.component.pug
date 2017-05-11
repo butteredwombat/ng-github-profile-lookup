@@ -1,0 +1,7 @@
+div([class.lg-margin-top]='profileInfo || isSearching')
+    div(*ngIf='profileInfo && !isSearching')
+        pre.xl-margin-bottom {{profileInfo | json}}
+        .row
+            a.btn.right.red((click)='clearInfo()') clear
+    .center
+        app-loading-spinner.center(*ngIf='isSearching')
