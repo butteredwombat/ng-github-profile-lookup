@@ -1,7 +1,6 @@
 # NgGithubProfileLookup
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
-This was project was developed using `node v6.10.2` and `npm v3.10.10`
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1 and was developed using `node v6.10.2` and `npm v3.10.10`
 
 ## Setup
 
