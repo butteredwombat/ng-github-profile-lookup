@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --port=4200",
     "build": "webpack",
     "setup": "npm install && npm run build",
-    "lint": "ng lint",
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
